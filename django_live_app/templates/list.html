@@ -1,0 +1,8 @@
+    {% if movies %}
+        {% for movie in movies%}
+        <h3>{{movie.title}} {{movie.year}}</h3>
+        <p>{{movie.description}}</p>
+        {% endfor %}
+    {%else%}
+    <p> No result </p>
+    {% endif %}  
